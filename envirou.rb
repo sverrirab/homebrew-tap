@@ -5,21 +5,21 @@
 class Envirou < Formula
   desc "View and manage your shell environment variables"
   homepage "https://github.com/sverrirab/envirou"
-  version "5.3.2"
+  version "5.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sverrirab/envirou/releases/download/v5.3.2/envirou_5.3.2_darwin_amd64.tar.gz"
-      sha256 "abfde552a4ac1b2611314f6b9993c1bd98bcfe4129dcab408647768d63eb71ca"
+      url "https://github.com/sverrirab/envirou/releases/download/v5.3.3/envirou_5.3.3_darwin_amd64.tar.gz"
+      sha256 "f9762cc851ca60034f5e7da9f8b68fdbb89c3841d716c036afdbce90a1151f7f"
 
       define_method(:install) do
         bin.install "envirou"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sverrirab/envirou/releases/download/v5.3.2/envirou_5.3.2_darwin_arm64.tar.gz"
-      sha256 "bcc7d1011511b496d803a4153975b8e159150238919f300c41ae525969cfd3e3"
+      url "https://github.com/sverrirab/envirou/releases/download/v5.3.3/envirou_5.3.3_darwin_arm64.tar.gz"
+      sha256 "0efe923cedc870265c6301b2af3cdb1990e03aa1ce992aca17bf6abc8c18e948"
 
       define_method(:install) do
         bin.install "envirou"
@@ -29,15 +29,15 @@ class Envirou < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sverrirab/envirou/releases/download/v5.3.2/envirou_5.3.2_linux_amd64.tar.gz"
-      sha256 "e77f0bc57c90b3eeb5cea28bd694e8e57ddd514ad906dc14486478c648bfcf21"
+      url "https://github.com/sverrirab/envirou/releases/download/v5.3.3/envirou_5.3.3_linux_amd64.tar.gz"
+      sha256 "bffa06daa795462fbc175f7625e20316c07a22052cea13d1eaa7dcb1036daba2"
       define_method(:install) do
         bin.install "envirou"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sverrirab/envirou/releases/download/v5.3.2/envirou_5.3.2_linux_arm64.tar.gz"
-      sha256 "5bc6268e944eaf3923fdac381d85584ba17ed63da0f6b8690b74df1ed6b1367d"
+      url "https://github.com/sverrirab/envirou/releases/download/v5.3.3/envirou_5.3.3_linux_arm64.tar.gz"
+      sha256 "950bcc260a4ca70ebd3b6bb1ce3cebd4a0019e5e5c6435f0bc76b93895d03c3d"
       define_method(:install) do
         bin.install "envirou"
       end
